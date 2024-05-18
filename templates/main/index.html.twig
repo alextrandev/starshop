@@ -2,15 +2,14 @@
 
 {% block body %}
 <h1>
-    Starshop: your monopoly-busting option for Starship parts!
+    Starshop: get your Starship parts!
 </h1>
 
 <div>
-    Browse through {{ numberOfStarships * 10 }} starships!
+    Browse through {{ starships|length }} starships!
 
-    {% if numberOfStarships > 400 %}
+    {% if starships|length > 2 %}
         <p>
-            {# Do you think "shiploads" will pass the legal team? #}
             That's a shiploads of ships!
         </p>
     {% endif %}
@@ -18,7 +17,6 @@
 
 <div>
     <h2>My Ship</h2>
-
     <table>
         <tr>
             <th>Name</th>
