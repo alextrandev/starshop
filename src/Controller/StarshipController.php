@@ -10,8 +10,14 @@ use Symfony\Component\Routing\Attribute\Route;
 class StarshipController extends AbstractController
 {
     #[Route('/starships/{id<\d+>}', name: 'app_starship')]
-    public function index(int $id): Response
+    public function index(int $id, StarshipRepository $repository): Response
     {
-        return dd($id);
+        $ship = $repository->find($id);
+
+        if (!$ship) {
+            throw $this->createNotFoundException("Starship not found");
+        }
+
+        return $this->render('starship/index.html.twig');
     }
 }
