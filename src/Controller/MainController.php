@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 class MainController extends AbstractController
 {
     #[Route('/', name: 'app_main')]
-    public function homepage(StarshipRepository $repository): Response
+    public function index(StarshipRepository $repository): Response
     {
         $starships = $repository->findAll();
         $myShip = $starships[array_rand($starships)];
