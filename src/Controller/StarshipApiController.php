@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-#[Route('/api/starships')] # prefix for all routes
+#[Route('/api/starships')] // prefix for all routes
 class StarshipApiController extends AbstractController
 {
     #[Route('', name: 'app_starship_api', methods: ['GET'])]

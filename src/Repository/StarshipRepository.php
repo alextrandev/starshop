@@ -10,7 +10,7 @@ class StarshipRepository
 {
     public function __construct(private LoggerInterface $log)
     {
-    } #autowire the logger interface
+    } // autowire the logger interface
 
     public function findAll(): array
     {
@@ -48,7 +48,7 @@ class StarshipRepository
         foreach ($this->findAll() as $starship) {
             if ($starship->getId() === $id) {
                 return $starship;
-            };
+            }
         }
 
         return null;
