@@ -1,39 +1,41 @@
 # Starshop
 
-This is an e-commerce for starships and starship parts. Built with symfony 7
-
-## Functions:
-- ...
+This is a simple e-commerce site for starships and starships repair. The purpose is to pratice symfony 7 and various symfony bundle/libraries.
 
 ## Technologies used
 
 Languages:
 
 - PHP
-- Javascript
+- Twig
 - CSS
+- Javascript
 
 Libraries and frameworks:
 
-- Symfony 7
-- Twig
-- Tailwind
-- [...](https://...)
+- [Symfony 7](https://symfony.com/7)
+- [Twig](https://twig.symfony.com/)
+- [Tailwind](https://symfony.com/bundles/TailwindBundle)
+- [Stimulus](https://stimulus.hotwired.dev/)
+- [Turbo](https://turbo.hotwired.dev/)
 
 ## Setup and usage
 
-**Live page [here](...)**
+**Live page [here](http://alextrandev.infinityfreeapp.com/starshop/public/)**
 
 **To host project locally**
 - Clone the project: ```git clone https://github.com/alextrandev/starshop.git```
 - Change working directory ```cd starshop```
 - Install dependencies ```composer install```
 - Serve project in local host ```symfony serve```
-
+- Project should run on local port: https://127.0.0.1:8000/
 
 ## Screenshot
 **Homepage**
-![homepage screenshot](./...)
+![homepage screenshot](./public/screenshots/homepage-screenshot.png)
+
+**Starship page**
+![starship page screenshot](./public/screenshots/starship-page-screenshot.png)
 
 ## Sources and acknowledgment
 
